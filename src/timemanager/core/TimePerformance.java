@@ -15,19 +15,48 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package timemanager;
+package timemanager.core;
+
+import java.util.logging.Logger;
 
 /**
  *
  * @author Arón Vargas Hernández <aronvargas83@gmail.com>
  */
-public class TimeManager {
+public class TimePerformance {
     
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-}
+    private static final Logger LOG = Logger.getLogger(TimePerformance.class.getName());
+    
+    private float motivation;
+    
+    public float getMotivation() {
+        return motivation;
+    }
+
+    public void setMotivation(float motivation) {
+        this.motivation = motivation;
+    }
+    
+    private float effort;
+        
+    public float getEffort() {
+        return effort;
+    }
+
+    public void setEffort(float effort) {
+        this.effort = effort;
+    }
+    
+    private float efficiency;
+    
+    public float getEfficiency() {
+        return efficiency;
+    }
+
+    public void setEfficiency(float efficiency) {
+        this.efficiency = efficiency;
+    }
+    
+    
     
 }
