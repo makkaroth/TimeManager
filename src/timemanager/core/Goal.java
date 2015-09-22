@@ -17,10 +17,33 @@
  */
 package timemanager.core;
 
+import java.util.Set;
+
 /**
  *
  * @author Arón Vargas Hernández <aronvargas83@gmail.com>
  */
 public class Goal {
+    
+    private Set<Task> tasks;
+
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
+    }
+    
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     
 }

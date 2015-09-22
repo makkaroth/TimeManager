@@ -66,7 +66,16 @@ public class TimeInvest {
         this.realTime = realTime;
     }
     
-    private 
+    private boolean multitask;
+
+    public boolean isMultitask() {
+        return multitask;
+    }
+
+    public void setMultitask(boolean multitask) {
+        this.multitask = multitask;
+    }
+    
     private Set<Task> assignedTasks;
 
     public Set<Task> getAssignedTasks() {
